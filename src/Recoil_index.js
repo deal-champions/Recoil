@@ -34,6 +34,10 @@ export type {
   SelectorFamilyOptions,
 } from './recoil_values/Recoil_selectorFamily';
 
+const {unstable_batchedUpdates} = require('./util/ReactBatchedUpdates');
+const {setBatch} = require('./util/Recoil_batch');
+setBatch(unstable_batchedUpdates);
+
 const {DefaultValue} = require('./core/Recoil_Node');
 const {RecoilRoot} = require('./core/Recoil_RecoilRoot.react');
 const {isRecoilValue} = require('./core/Recoil_RecoilValue');
@@ -109,4 +113,5 @@ module.exports = {
 
   // Other functions
   isRecoilValue,
+  setBatch,
 };
