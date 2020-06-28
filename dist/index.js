@@ -13,8 +13,8 @@
 
 if (process.env.NODE_ENV === 'production') {
   // @oss-only
-  module.exports = require('./recoil.production.js'); // @oss-only
+  module.exports = require('./recoil.production.native.js'); // @oss-only
 } else {
   // @oss-only
-  module.exports = require('./recoil.development.js'); // @oss-only
+  module.exports = require('./recoil.development.native.js'); // @oss-only
 } // @oss-only
