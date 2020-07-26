@@ -1,3 +1,15 @@
+# Why this fork?
+
+We need to use recoil in a React Native project. As of v 0.0.10 there is still an open PR with the changes needed for React NAtive support. However, that PR needed master to merged in. Further more, the `dist` folder is not included in the original repo, hence, if you are using a github link to import this library, it will not have the built libraries.
+
+Furthermore, the build process was failing due to a misconfiguration with the `Recoil_sprintf` file, which was removed.
+
+This fork fixes these problems and creates a `dist` with the compiled version of the library, so you can use it directly in your projects:
+
+```
+yarn add deal-champions/Recoil
+```
+
 # Recoil &middot; [![Node.js CI](https://github.com/facebookexperimental/Recoil/workflows/Node.js%20CI/badge.svg)](https://github.com/facebookexperimental/Recoil/actions) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebookexperimental/Recoil/blob/master/LICENSE)
 
 Recoil is an experimental set of utilities for state management with React.
